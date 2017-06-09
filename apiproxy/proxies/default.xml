@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <PreFlow>
+        <Request/>
+        <Response/>
+    </PreFlow>
+    <Flows>
+        <Flow name="get">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>KVMGet</Name>
+                </Step>
+                <Step>
+                    <Name>TestResponse</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(request.verb = "GET")</Condition>
+        </Flow>
+        <Flow name="post">
+            <Description/>
+            <Request>
+                <Step>
+                    <Name>KVMStore</Name>
+                </Step>
+                <Step>
+                    <Name>TestResponse</Name>
+                </Step>
+            </Request>
+            <Response/>
+            <Condition>(request.verb = "POST")</Condition>
+        </Flow>
+    </Flows>
+    <HTTPProxyConnection>
+        <BasePath>/kvmcapacitytest/v1/kvm</BasePath>
+        <VirtualHost>default</VirtualHost>
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="default"/>
+</ProxyEndpoint>

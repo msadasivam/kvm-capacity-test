@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="5" name="KVMCapacityTest">
+    <Basepaths>/helloworld</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1496971584154</CreatedAt>
+    <CreatedBy>msadasivam@apigee.com</CreatedBy>
+    <Description>Hello world application</Description>
+    <DisplayName>HelloWorld</DisplayName>
+    <LastModifiedAt>1496971584154</LastModifiedAt>
+    <LastModifiedBy>msadasivam@apigee.com</LastModifiedBy>
+    <Policies>
+        <Policy>KVMGet</Policy>
+        <Policy>KVMStore</Policy>
+        <Policy>TestResponse</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>

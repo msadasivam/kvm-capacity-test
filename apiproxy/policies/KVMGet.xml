@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations async="false" continueOnError="false" enabled="true" name="KVMGet" mapIdentifier="kvmcapacitytest">
+    <Get assignTo="myvar">
+        <Key>
+            <Parameter ref="request.queryparam.seq"/>
+        </Key>
+    </Get>
+    <Scope>environment</Scope>
+</KeyValueMapOperations>

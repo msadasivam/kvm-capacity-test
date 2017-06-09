@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<KeyValueMapOperations name="KVMStore" mapIdentifier="kvmcapacitytest">
+    <Scope>environment</Scope>
+    <Put override="true">
+        <Key>
+            <Parameter ref="request.queryparam.seq"/>
+        </Key>
+        <Value>c39cf24f2a46f9cfac31d4f37348ba8e6fa267d2</Value>
+        <Value ref="system.time"/>
+        <Value>25c34aa984b9b3d7fbeed07758cf859d1d39dd7a</Value>
+        <Value>ae841ae2b2f7fcf9f8b354a4061c1054eecd2a39</Value>
+        <Value ref="request.queryparam.seq"/>
+    </Put>
+</KeyValueMapOperations>
